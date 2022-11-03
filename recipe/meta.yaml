@@ -1,5 +1,5 @@
 {% set name = "lumispy" %}
-{% set version = "0.2" %}
+{% set version = "0.2.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lumispy-{{ version }}.tar.gz
-  sha256: 31f908cc0a2748f7daa336c8b189fe83502a94758e996c592dd29f36e0250858
+  sha256: aa4b9e3389db2c354debbc3db7187d083c7d81d5ca717a4202f107b2b1a1358c
 
 build:
   number: 0
