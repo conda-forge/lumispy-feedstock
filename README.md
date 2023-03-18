@@ -1,11 +1,11 @@
-About lumispy
-=============
+About lumispy-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lumispy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lumispy/lumispy
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lumispy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Luminescence spectroscopy data analysis with HyperSpy.
 
