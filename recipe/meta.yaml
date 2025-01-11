@@ -7,22 +7,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lumispy-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lumispy-{{ version }}.tar.gz
   sha256: 7257a79d936127b40edc1897fac8d89e7a29e7db3b39d8f063392b0ac2e6e513
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - hyperspy-base >=1.7
     - numpy
-    - python >=3.7
+    - python >={{ python_min }}
     - scipy
 
 test:
@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/lumispy/lumispy
