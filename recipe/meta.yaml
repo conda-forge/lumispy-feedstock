@@ -32,6 +32,7 @@ test:
     - lumispy.components
   commands:
     - pip check
+    - python -c "import lumispy; print(lumispy.__version__)"
   requires:
     - pip
     - python {{ python_min }}
